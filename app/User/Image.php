@@ -1,0 +1,20 @@
+<?php
+
+namespace App\User;
+
+use App\User;
+use Illuminate\Database\Eloquent\Model;
+
+class Image extends Model
+{
+    protected $table = 'user_images';
+
+    protected $fillable = [
+        'user_id', 'filename', 'is_active'
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+}
