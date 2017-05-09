@@ -17,7 +17,7 @@
     </div>
 </template>
 
-<script type="text/babel">    
+<script type="text/babel">
     import 'lightgallery.js'
     import 'lg-thumbnail.js'
     import 'lg-zoom.js'

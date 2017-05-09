@@ -9,7 +9,7 @@
         <ul class="nav navbar-nav navbar-right">
             <!-- Authentication Links -->
             <li>
-                <router-link to="/">Moeen</router-link>
+                <router-link to="/">{{ user.name }}</router-link>
             </li>
         </ul>
     </div>
@@ -18,13 +18,15 @@
 <script type="text/babel">
     export default {
         name: 'authorised-header',
+        props: {
+          user: {
+            required: true,
+          },
+        },
         data(){
             return {
                 //
             }
-        },
-        computed: {
-
         },
     }
 </script>

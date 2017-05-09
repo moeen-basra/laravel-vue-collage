@@ -16,7 +16,7 @@
                     <!-- Branding Image -->
                     <router-link to="/" class="navbar-brand">Laravel</router-link>
                 </div>
-                <authorised-header v-if="user"/>
+                <authorised-header :user="user" v-if="user"/>
                 <default-header v-else/>
             </div>
         </nav>
