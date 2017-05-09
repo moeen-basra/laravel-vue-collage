@@ -1,6 +1,6 @@
 <template lang="html">
     <div class="container">
-        <h3>Bootstrap 3 Responsive Image Grid <router-link class="btn btn-success pull-right" to="/collage">Create New</router-link></h3>
+        <h3>Welcome to Larvel Vue Collage <router-link class="btn btn-success pull-right" to="/collage">Create New</router-link></h3>
         <hr>
         <div class="row">
             <div id="lightgallery">
@@ -9,6 +9,9 @@
                         <img :src="'/images/user/'+image.filename" class="thumbnail img-responsive">
                     </a>
                 </div>
+            </div>
+            <div class="col-lg-12"  v-if="!images.length">
+                <p>Please create new collage...</p>
             </div>
         </div>
     </div>

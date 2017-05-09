@@ -1,5 +1,7 @@
 <template>
     <div class="container">
+        <h3>Create a new collage <router-link class="btn btn-success pull-right" to="/">Go Home</router-link></h3>
+        <hr>
         <div class="row">
             <div class="col-lg-6">
                 <div class="panel panel-primary">
@@ -162,7 +164,7 @@
                                 <p>
                                     <label>
                                         <input type="button" @click="saveAsPNG"
-                                               class="btn btn-default btn-sm saveFile dont-disable"
+                                               class="btn btn-success btn-sm saveFile dont-disable"
                                                value="Save As PNG">
                                     </label>
                                 </p>
