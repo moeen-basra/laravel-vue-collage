@@ -9,7 +9,10 @@
         <ul class="nav navbar-nav navbar-right">
             <!-- Authentication Links -->
             <li>
-                <router-link to="/">{{ user.name }}</router-link>
+                <router-link to="/" >{{ user.name }}</router-link>
+            </li>
+            <li>
+                <a href="#" @click.prevent="logout">Logout</a>
             </li>
         </ul>
     </div>
@@ -27,6 +30,12 @@
             return {
                 //
             }
+        },
+        methods: {
+          logout() {
+              localStorage.clear()
+              window.location.href = "/login"
+          },
         },
     }
 </script>
